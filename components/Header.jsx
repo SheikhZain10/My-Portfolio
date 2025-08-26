@@ -105,7 +105,7 @@ const Header = ({ isDarkMode }) => {
         <img
           src="/Work/zain-picture.png"
           alt="Zain"
-          className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain rounded-full border-4 border-white shadow-xl"
+          className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-full border-4 border-white shadow-xl overflow-hidden"
         />
       </motion.div>
     </div>

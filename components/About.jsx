@@ -187,7 +187,7 @@ const About = ({ isDarkMode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-            className="w-full flex justify-center my-8"
+            className="w-full flex justify-center my-12"
           >
             <div className="w-70 sm:w-86 max-w-none">
               <Lottie 
@@ -199,7 +199,7 @@ const About = ({ isDarkMode }) => {
           </motion.div>
 
           <motion.h4 
-            className="my-2 font-outfit"
+            className="my-8 font-outfit text-xl font-semibold text-gray-800 dark:text-white"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -277,7 +277,7 @@ const About = ({ isDarkMode }) => {
 
           {/* Education & Courses Section */}
           <motion.h4 
-            className="my-2 font-outfit"
+            className="my-8 font-outfit text-xl font-semibold text-gray-800 dark:text-white"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
