@@ -13,7 +13,7 @@ const About = ({ isDarkMode }) => {
   const opacity = useTransform(scrollY, [0, 1000], [1, 0.9]);
 
   return (
-    <div className="py-20 bg-slate-50 dark:bg-slate-900 relative overflow-hidden">
+    <div className="py-20 bg-white dark:bg-black relative overflow-hidden">
       {/* Animated Background Elements */}
       <motion.div 
         className="absolute top-20 right-10 w-40 h-40 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl"

@@ -8,7 +8,7 @@ const Header = ({ isDarkMode }) => {
   return (
     <div
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center px-4 text-center bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-black dark:via-slate-900 dark:to-slate-800"
+      className="min-h-screen flex flex-col items-center justify-center px-4 text-center bg-white dark:bg-black"
     >
 
       <motion.h1

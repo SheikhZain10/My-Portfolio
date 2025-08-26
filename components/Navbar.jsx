@@ -21,7 +21,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
      initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-    className="w-full fixed px-5 lg:px-7 xl:px-[8%] pt-4 py-2 flex items-center justify-between z-50 dark:text-white">
+    className="w-full fixed px-5 lg:px-7 xl:px-[8%] pt-4 py-2 flex items-center justify-between z-50 dark:text-white bg-white dark:bg-[#121213]">
       <button
         className="cursor-pointer flex items-center justify-center"
         onClick={() => setIsDarkMode((prev) => !prev)}
@@ -60,7 +60,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
       <ul
         ref={sideMenuRef}
-        className="flex md:hidden flex-col gap-2 py-20 px-0 fixed right-0 top-0 bottom-0 w-64 h-screen z-50 bg-white/90 dark:bg-[#161616]/90 backdrop-blur-sm transition-transform duration-500 transform translate-x-full"
+        className="flex md:hidden flex-col gap-2 py-20 px-0 fixed right-0 top-0 bottom-0 w-64 h-screen z-50 bg-white dark:bg-[#161616] transition-transform duration-500 transform translate-x-full"
       >
         <div onClick={closeMenu} className="absolute top-6 right-6">
           <Image
