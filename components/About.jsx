@@ -45,10 +45,10 @@ const About = ({ isDarkMode }) => {
 
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold font-outfit text-gray-800 dark:text-white mb-4">
@@ -75,12 +75,12 @@ const About = ({ isDarkMode }) => {
         </motion.div>
 
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+                  <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+        >
             <h4 className="my-2 font-outfit text-xl font-semibold text-gray-800 dark:text-white">Profile</h4>
             <motion.p 
               className="text-sm sm:text-base dark:text-white text-gray-600 mb-4 text-justify leading-relaxed"

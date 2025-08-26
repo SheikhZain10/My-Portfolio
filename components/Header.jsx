@@ -22,7 +22,7 @@ const Header = () => {
           opacity: [0.3, 0.6, 0.3]
         }}
         transition={{ 
-          duration: 8, 
+          duration: 6, 
           repeat: Infinity, 
           ease: "easeInOut" 
         }}
@@ -35,10 +35,10 @@ const Header = () => {
           opacity: [0.4, 0.7, 0.4]
         }}
         transition={{ 
-          duration: 10, 
+          duration: 8, 
           repeat: Infinity, 
           ease: "easeInOut",
-          delay: 2
+          delay: 1
         }}
       />
       <motion.div 
@@ -49,18 +49,18 @@ const Header = () => {
           opacity: [0.2, 0.5, 0.2]
         }}
         transition={{ 
-          duration: 12, 
+          duration: 10, 
           repeat: Infinity, 
           ease: "easeInOut",
-          delay: 4
+          delay: 2
         }}
       />
 
       <div className="text-center z-10 relative">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           style={{ opacity }}
           className="mb-4"
         >
@@ -70,9 +70,9 @@ const Header = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           style={{ opacity }}
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl font-outfit text-gray-600 dark:text-gray-300 mb-4">
@@ -81,9 +81,9 @@ const Header = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           style={{ opacity }}
         >
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
@@ -93,9 +93,9 @@ const Header = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
           style={{ opacity }}
         >
           <motion.p
@@ -117,16 +117,16 @@ const Header = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           style={{ opacity }}
           className="flex flex-col sm:flex-row items-center gap-4 mt-6"
         >
           <motion.a
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
             className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 hover:scale-105 transition-all duration-400 cursor-pointer"
             href="#contact"
           >
@@ -134,9 +134,9 @@ const Header = () => {
             <Image src={assets.right_arrow_white} alt="Arrow" className="w-4" />
           </motion.a>
           <motion.a
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
             className="dark:text-black dark:bg-slate-200 px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 hover:scale-105 transition-all duration-400 cursor-pointer"
             href="/resume"
           >
@@ -144,9 +144,9 @@ const Header = () => {
             <Image src={assets.download_icon} alt="Download" className="w-4" />
           </motion.a>
           <motion.a
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.4 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
             className="px-10 py-3 border-2 border-blue-600 rounded-full bg-blue-600 text-white flex items-center gap-2 hover:scale-105 hover:bg-blue-700 transition-all duration-400 cursor-pointer"
             href="/Zain_Resume.pdf"
             download="Zain_Resume.pdf"
@@ -157,9 +157,9 @@ const Header = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
           style={{ opacity }}
           className="w-full mt-8 flex justify-center"
         >
