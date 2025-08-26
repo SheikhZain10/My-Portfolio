@@ -64,21 +64,23 @@ const Header = () => {
           style={{ opacity }}
           className="mb-4"
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold font-outfit text-gray-800 dark:text-white mb-4">
-            Zain
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold font-outfit mb-4 min-h-[120px] sm:min-h-[140px] md:min-h-[160px] flex items-center justify-center">
+            <TypeAnimation
+              sequence={[
+                "ZAIN UL ABIDIN",
+                2000,
+                "FULL STACK .NET DEVELOPER",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+            />
           </h1>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          style={{ opacity }}
-        >
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-outfit text-gray-600 dark:text-gray-300 mb-4">
-            Full Stack .NET Developer
-          </h2>
-        </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -86,7 +88,7 @@ const Header = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           style={{ opacity }}
         >
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-400 mb-6 max-w-2xl mx-auto min-h-[60px] flex items-center justify-center">
             Crafting robust web applications with modern technologies. 
             Specialized in .NET Core, C#, and scalable SaaS solutions.
           </p>
@@ -99,17 +101,13 @@ const Header = () => {
           style={{ opacity }}
         >
           <motion.p
-            className="flex flex-col sm:flex-row items-center text-lg sm:text-2xl text-gray-700 mt-4 dark:text-white gap-2 sm:gap-0"
+            className="flex items-center justify-center text-lg sm:text-2xl text-gray-700 mt-4 dark:text-white gap-3 min-h-[80px]"
           >
-            <span className="text-center sm:text-left">Lahore, Pakistan</span>
-            <span className="hidden sm:inline"> · </span>
-            <span className="text-center sm:text-left">sheikzain1355@gmail.com</span>
-            <span className="hidden sm:inline"> · </span>
-            <span className="text-center sm:text-left">03034871146</span>
+            <span className="text-center">From Lahore, Pakistan</span>
             <motion.img
               src="/pakistan-flag-icon.svg"
               alt="Pakistan Flag"
-              className="w-8 h-5 mt-2 sm:mt-0 sm:ml-4"
+              className="w-8 h-5"
               whileHover={{ scale: 1.2, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
             />
@@ -121,7 +119,7 @@ const Header = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           style={{ opacity }}
-          className="flex flex-col sm:flex-row items-center gap-4 mt-6"
+          className="flex flex-col sm:flex-row items-center gap-4 mt-6 min-h-[80px] justify-center"
         >
           <motion.a
             initial={{ opacity: 0 }}
@@ -161,7 +159,7 @@ const Header = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
           style={{ opacity }}
-          className="w-full mt-8 flex justify-center"
+          className="w-full mt-8 flex justify-center min-h-[120px] items-center"
         >
           <img
             src="/Work/zain-picture.png"
